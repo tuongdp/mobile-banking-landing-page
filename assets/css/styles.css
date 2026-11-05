@@ -606,3 +606,34 @@ a {
   font-size: 1.8rem;
   font-weight: 600;
 }
+
+/* Transfer */
+.transfer {
+  margin-top: 160px;
+}
+
+.transfer__inner {
+  display: flex;
+}
+
+.transfer__media {
+  flex-shrink: 0;
+  width: 48.72%;
+  position: relative;
+}
+
+.transfer__background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.transfer__image {
+  width: 413px;
+  height: 600px;
+  display: block;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  left: 29px;
+}
