@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mobile Banking Website</title>
+
+        <!-- Reset CSS -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+
+        <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Styles CSS -->
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <!-- Logo -->
+                    <a href="#!">
+                        <img
+                            src="./assets/img/logo.svg"
+                            alt="CeloBank"
+                            class="header__logo"
+                        />
+                    </a>
+
+                    <!-- Navigation -->
+                    <nav class="navbar">
+                        <ul class="navbar__list">
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">Home</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">Products</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">Features</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#!" class="navbar__link">Blog</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- Header Action -->
+                    <div class="header-action">
+                        <a href="#!" class="header-action__link">Log in</a>
+                        <a href="#!" class="btn header-action__btn">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main -->
+        <main style="height: 5000px">
+            <!-- Hero -->
+            <section class="hero">
+                <div class="container">
+                    <div class="hero__inner">
+                        <!-- Hero info -->
+                        <div class="hero__info">
+                            <span class="hero__eyebrow">
+                                Digital Smart Wallet
+                            </span>
+
+                            <h1 class="section__heading hero__title">
+                                Digital
+                                <span class="hero__title-highlight">
+                                    Payment
+                                </span>
+                                For Everyone.
+                            </h1>
+
+                            <p class="section__desc hero__desc">
+                                We bring together everything that's required to
+                                build websites and apps that accept payments and
+                                send payouts globally. We are the best platform.
+                            </p>
+
+                            <form action="" class="hero__form">
+                                <input
+                                    type="email"
+                                    class="hero__input"
+                                    placeholder="Your email address"
+                                    aria-label="Your email address"
+                                    required
+                                />
+
+                                <button type="submit" class="btn hero__btn">
+                                    Get Started
+                                </button>
+                            </form>
+
+                            <p class="hero__note">
+                                *We'll respect the inbox and never share your
+                                email.
+                            </p>
+                        </div>
+
+                        <!-- Hero thumb -->
+                        <figure class="hero__thumb">
+                            <img
+                                src="./assets/img/hero-dashboard.png"
+                                alt="Digital Smart Wallet Dashboard"
+                                class="hero__image"
+                            />
+
+                            <div class="hero__deposit">
+                                <img src="./assets/icons/download.svg" alt="" />
+                                <span class="hero__deposit-text">Deposite</span>
+                                <span class="hero__deposit-amount">$32000</span>
+                            </div>
+
+                            <div class="hero__interest">
+                                <div class="hero__interest--info">
+                                    <span class="hero__interest-value">0%</span>
+                                    <span class="hero__interest-label">
+                                        Interest
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="hero__fund">
+                                <img src="./assets/icons/shield.svg" alt="" />
+
+                                <div class="hero__fund-info">
+                                    <span class="hero__fund-amount">
+                                        $1.310
+                                    </span>
+                                    <span class="hero__fund-label">
+                                        SECURED FUNDS
+                                    </span>
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

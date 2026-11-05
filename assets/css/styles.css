@@ -1,0 +1,301 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #7264d6;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Common */
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    --height: 58px;
+    display: inline-block;
+    height: var(--height);
+    line-height: var(--height);
+    min-width: 149px;
+    border-radius: 8px;
+    color: #fff;
+    background: var(--primary-color);
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    outline: none;
+    border: none;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.section__heading {
+    color: #212832;
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.167; /* 116.667% */
+}
+
+.section__desc {
+    color: #696d76;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67; /* 166.667% */
+}
+
+/* Header */
+.header {
+    padding-top: 42px;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    margin-left: 46px;
+}
+
+.navbar__list {
+    display: flex;
+}
+
+.navbar__link {
+    padding: 0 24px;
+    color: #212832;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+    position: relative;
+}
+
+.navbar__link:hover {
+    text-shadow: 1px 0 0 currentColor;
+    color: #212832;
+}
+
+.navbar__link:hover::after {
+    content: "";
+    display: inline-block;
+    height: 1px;
+    width: 60%;
+    border-radius: 50%;
+    background: var(--primary-color);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -7px;
+}
+
+.header-action {
+    margin-left: auto;
+}
+
+.header-action__link {
+    padding: 0 28px;
+    color: #212832;
+    font-family: "Open Sans";
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+}
+
+.header-action__btn {
+    background: #212832;
+    --height: 52px;
+    min-width: 113px;
+}
+
+/* Hero */
+.hero {
+    margin-top: 76px;
+}
+
+.hero__inner {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.hero__info {
+    width: 46.16%;
+}
+
+.hero__eyebrow {
+    color: #696d77;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.hero__eyebrow::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 2px;
+    background: #696d77;
+}
+
+.hero__title {
+    margin-top: 12px;
+}
+
+.hero__title-highlight {
+    color: var(--primary-color);
+}
+
+.hero__desc {
+    margin-top: 20px;
+}
+
+.hero__form {
+    margin-top: 40px;
+    height: 74px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 16px 42px 0 rgba(0, 0, 0, 0.07);
+    display: flex;
+    align-items: center;
+}
+
+.hero__input {
+    flex: 1;
+    padding: 23px;
+    border: none;
+    outline: none;
+}
+
+.hero__input::placeholder {
+    color: #696d76;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+}
+
+.hero__btn {
+    margin-right: 8px;
+}
+
+.hero__note {
+    margin-top: 20px;
+    color: #696d76;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.71429; /* 171.429% */
+}
+
+.hero__thumb {
+    position: relative;
+    flex: 1;
+}
+
+.hero__image {
+    margin-left: 100px;
+}
+
+.hero__deposit {
+    width: 174px;
+    height: 46px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.07);
+    padding: 14px 10px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 113px;
+}
+
+.hero__deposit-text {
+    color: #31456a;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+    margin-left: 8px;
+}
+
+.hero__deposit-amount {
+    color: #4ab5e3;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1; /* 100% */
+    margin-left: auto;
+}
+
+.hero__interest {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #da6464;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 127px;
+}
+
+.hero__interest-value {
+    color: #fff;
+    font-size: 4.4rem;
+    font-weight: 600;
+    display: block;
+}
+
+.hero__interest-label {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.hero__fund {
+    width: 124px;
+    height: 68px;
+    border-radius: 10px;
+    background: #439f90;
+    padding: 20px 15px 21px 14px;
+    display: flex;
+    align-items: center;
+    column-gap: 11px;
+    position: absolute;
+    bottom: 61px;
+    right: 100px;
+}
+
+.hero__fund-amount {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.hero__fund-label {
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1; /* 100% */
+    margin-top: 5px;
+}
