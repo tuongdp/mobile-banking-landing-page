@@ -958,7 +958,7 @@ a {
 .download__inner {
   position: relative;
   border-radius: 24px;
-  background: #7264d6;
+  background: transparent;
   text-align: center;
   padding: 100px 0;
 }
@@ -1003,6 +1003,8 @@ a {
 .download__decorations {
   position: absolute;
   inset: 0;
+  background: var(--primary-color);
+  z-index: -1;
 }
 
 .download__star--1 {
@@ -1026,4 +1028,110 @@ a {
   position: absolute;
   bottom: 49px;
   right: 166px;
+}
+
+/* Footer */
+.footer {
+  margin-top: 200px;
+}
+
+.footer__top {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  column-gap: 163px;
+}
+
+.footer__heading {
+  color: #212832;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67; /* 166.667% */
+}
+
+.footer__list {
+  margin-top: 24px;
+}
+
+.footer__link {
+  color: #6a6e78;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.67; /* 166.667% */
+  opacity: 0.75;
+  display: inline-block;
+}
+
+.footer__item + .footer__item {
+  margin-top: 15px;
+}
+
+.footer__address {
+  margin-top: 24px;
+  width: 371px;
+  color: #6a6e78;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.67; /* 166.667% */
+}
+
+.footer__newsletter {
+  margin-top: 48px;
+}
+
+.footer__form {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.footer__input {
+  width: 270px;
+  height: 52px;
+  border-radius: 6px;
+  border: 1px solid #8e919a;
+  outline: none;
+  padding: 12px;
+}
+
+.footer__input::placeholder {
+  color: #8e919a;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75; /* 175% */
+}
+
+.footer__submit {
+  --height: 52px;
+  min-width: 113px;
+}
+
+.footer__contact {
+  margin-top: 54px;
+}
+
+.footer__contact-link {
+  color: #6a6e78;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.67; /* 166.667% */
+  text-decoration: underline;
+}
+
+.footer__contact-link + .footer__contact-link {
+  margin-left: 100px;
+}
+
+.footer__bottom {
+  margin-top: 28px;
+  background: var(--primary-color);
+  text-align: center;
+}
+
+.footer__copyright {
+  padding: 28px 0;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75; /* 175% */
 }

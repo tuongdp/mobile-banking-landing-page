@@ -36,6 +36,18 @@
       rel="stylesheet"
     />
 
+    <!-- AOS CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
     <!-- Styles CSS -->
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
@@ -81,16 +93,18 @@
     </header>
 
     <!-- Main -->
-    <main style="height: 5000px">
+    <main>
       <!-- Hero -->
       <section class="hero">
         <div class="container">
           <div class="hero__inner">
             <!-- Hero info -->
-            <div class="hero__info">
+            <div class="hero__info" data-aos="fade-right">
               <span class="section__eyebrow"> Digital Smart Wallet </span>
 
-              <h1 class="section__heading hero__title">
+              <h1
+                class="section__heading hero__title animate__animated animate__fadeInDown"
+              >
                 Digital
                 <span class="hero__title-highlight"> Payment </span>
                 For Everyone.
@@ -111,7 +125,12 @@
                   required
                 />
 
-                <button type="submit" class="btn hero__btn">Get Started</button>
+                <button
+                  type="submit"
+                  class="btn hero__btn animate__animated animate__fadeInUp animate__delay-1s"
+                >
+                  Get Started
+                </button>
               </form>
 
               <p class="hero__note">
@@ -120,7 +139,7 @@
             </div>
 
             <!-- Hero thumb -->
-            <figure class="hero__thumb">
+            <figure class="hero__thumb" data-aos="fade-left">
               <img
                 src="./assets/img/hero-dashboard.png"
                 alt="Digital Smart Wallet Dashboard"
@@ -133,7 +152,7 @@
                 <span class="hero__deposit-amount">$32000</span>
               </div>
 
-              <div class="hero__interest">
+              <div class="hero__interest animate__animated animate__bounceIn">
                 <div class="hero__interest--info">
                   <span class="hero__interest-value">0%</span>
                   <span class="hero__interest-label"> Interest </span>
@@ -158,7 +177,7 @@
         <div class="container">
           <div class="works__inner">
             <!-- Left column -->
-            <figure class="works__media">
+            <figure class="works__media" data-aos="fade-right">
               <img
                 src="./assets/img/works-thumb.png"
                 alt="Digital Smart Wallet illustration"
@@ -189,7 +208,7 @@
             </figure>
 
             <!-- Right column -->
-            <div class="works__content">
+            <div class="works__content" data-aos="fade-left">
               <span class="section__eyebrow"> Digital Smart Wallet </span>
 
               <h2 class="section__title">How It Works</h2>
@@ -240,7 +259,7 @@
         <div class="container">
           <div class="feature__inner">
             <!-- Left column -->
-            <div class="feature__content">
+            <div class="feature__content" data-aos="fade-right">
               <span class="section__eyebrow"> Digital Smart Wallet </span>
 
               <h2 class="section__title">One Card For All Your Payments</h2>
@@ -263,7 +282,7 @@
             </div>
 
             <!-- Right column -->
-            <figure class="feature__media">
+            <figure class="feature__media" data-aos="fade-left">
               <img
                 src="./assets/img/feature-thumb.png"
                 alt="Digital Smart Wallet on smartphone"
@@ -311,7 +330,7 @@
         <div class="container">
           <div class="transfer__inner">
             <!-- Left column -->
-            <figure class="transfer__media">
+            <figure class="transfer__media" data-aos="fade-right">
               <!-- Background -->
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -382,7 +401,7 @@
             </figure>
 
             <!-- Right column -->
-            <div class="transfer__content">
+            <div class="transfer__content" data-aos="fade-left">
               <span class="section__eyebrow"> Digital Smart Wallet </span>
 
               <h2 class="section__title">
@@ -416,7 +435,7 @@
         <div class="container">
           <div class="testimonial__inner">
             <!-- Header -->
-            <div class="testimonial__header">
+            <div class="testimonial__header" data-aos="fade-up">
               <span class="section__eyebrow testimonial__eyebrow">
                 Our Testimonial
               </span>
@@ -433,7 +452,7 @@
             <div class="testimonial__slider">
               <div class="testimonial__list">
                 <!-- Testimonial item 1 -->
-                <article class="testimonial__item">
+                <article class="testimonial__item" data-aos="fade-up">
                   <blockquote class="testimonial__quote">
                     Fantastic platform for online banking. The best online
                     banking platform I have used. Payments, loans, and money
@@ -457,7 +476,11 @@
                 </article>
 
                 <!-- Testimonial item 2 -->
-                <article class="testimonial__item">
+                <article
+                  class="testimonial__item"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
                   <blockquote class="testimonial__quote">
                     Fantastic platform for online banking. The best online
                     banking platform I have used. Payments, loans, and money
@@ -480,7 +503,11 @@
                   </div>
                 </article>
                 <!-- Testimonial item 3 -->
-                <article class="testimonial__item">
+                <article
+                  class="testimonial__item"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
                   <blockquote class="testimonial__quote">
                     Fantastic platform for online banking. The best online
                     banking platform I have used. Payments, loans, and money
@@ -504,7 +531,11 @@
                 </article>
 
                 <!-- Testimonial item 4 -->
-                <article class="testimonial__item">
+                <article
+                  class="testimonial__item"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
                   <blockquote class="testimonial__quote">
                     Fantastic platform for online banking. The best online
                     banking platform I have used. Payments, loans, and money
@@ -527,7 +558,11 @@
                   </div>
                 </article>
                 <!-- Testimonial item 5 -->
-                <article class="testimonial__item">
+                <article
+                  class="testimonial__item"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
                   <blockquote class="testimonial__quote">
                     Fantastic platform for online banking. The best online
                     banking platform I have used. Payments, loans, and money
@@ -551,7 +586,11 @@
                 </article>
 
                 <!-- Testimonial item 6 -->
-                <article class="testimonial__item">
+                <article
+                  class="testimonial__item"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
                   <blockquote class="testimonial__quote">
                     Fantastic platform for online banking. The best online
                     banking platform I have used. Payments, loans, and money
@@ -606,7 +645,7 @@
         <div class="container">
           <div class="blog__inner">
             <!-- Header -->
-            <div class="blog__header">
+            <div class="blog__header" data-aos="fade-up">
               <div class="blog__header-content">
                 <span class="section__eyebrow"> Our Blog </span>
 
@@ -624,7 +663,7 @@
             <!-- Blog list -->
             <div class="blog__list">
               <!-- Blog item 1 -->
-              <article class="blog__item">
+              <article class="blog__item" data-aos="fade-up">
                 <a href="#!" class="blog__media">
                   <img
                     src="./assets/img/blog-01.jpg"
@@ -647,7 +686,11 @@
                 </div>
               </article>
               <!-- Blog item 2 -->
-              <article class="blog__item">
+              <article
+                class="blog__item"
+                data-aos="fade-up"
+                data-aos-delay="150"
+              >
                 <a href="#!" class="blog__media">
                   <img
                     src="./assets/img/blog-02.jpg"
@@ -722,7 +765,7 @@
         <div class="container">
           <div class="download__inner">
             <!-- Content -->
-            <div class="download__content">
+            <div class="download__content" data-aos="zoom-in">
               <span class="download__eyebrow section__eyebrow"> Our App </span>
 
               <h2 class="download__title section__title">Download the Apps</h2>
@@ -782,5 +825,128 @@
         </div>
       </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <!-- Footer columns -->
+          <div class="footer__top">
+            <!-- Column 1: Logo -->
+            <div class="footer__column">
+              <a href="#!" class="footer__logo">
+                <img src="./assets/img/logo.svg" alt="CeloBank" />
+              </a>
+            </div>
+
+            <!-- Column 2: Sitemap -->
+            <div class="footer__column">
+              <h3 class="footer__heading">Sitemap</h3>
+
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#!" class="footer__link">Home</a>
+                </li>
+
+                <li class="footer__item">
+                  <a href="#!" class="footer__link">About</a>
+                </li>
+
+                <li class="footer__item">
+                  <a href="#!" class="footer__link">Blog</a>
+                </li>
+
+                <li class="footer__item">
+                  <a href="#!" class="footer__link">Contact</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Column 3: Socials -->
+            <div class="footer__column">
+              <h3 class="footer__heading">Socials</h3>
+
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#!" class="footer__link">Facebook</a>
+                </li>
+
+                <li class="footer__item">
+                  <a href="#!" class="footer__link">Linkedin</a>
+                </li>
+
+                <li class="footer__item">
+                  <a href="#!" class="footer__link">Instagram</a>
+                </li>
+
+                <li class="footer__item">
+                  <a href="#!" class="footer__link">Twitter</a>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Column 4: Address & Newsletter -->
+            <div class="footer__column">
+              <h3 class="footer__heading">Head Office</h3>
+
+              <address class="footer__address">
+                Xilliams Corner Wine © 2017. 1112 A Market St # Ste B22,
+                Charlottesville, CA 45565
+              </address>
+
+              <div class="footer__newsletter">
+                <h3 class="footer__heading">News letter</h3>
+
+                <form action="" class="footer__form">
+                  <input
+                    type="email"
+                    class="footer__input"
+                    placeholder="Email address..."
+                    aria-label="Email address..."
+                    required
+                  />
+
+                  <button
+                    type="submit"
+                    class="footer__submit btn animate__animated animate__pulse"
+                  >
+                    Subscribe
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact information -->
+          <div class="footer__contact">
+            <a href="mailto:email@gmail.com" class="footer__contact-link">
+              email@gmail.com
+            </a>
+
+            <a href="tel:+1234567890" class="footer__contact-link">
+              +1 234 567 890
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2022. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <!-- Initialize AOS -->
+    <script>
+      AOS.init({
+        duration: 800,
+        offset: 100,
+        easing: "ease-out-cubic",
+        once: true,
+      });
+    </script>
   </body>
 </html>
