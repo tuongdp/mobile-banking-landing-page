@@ -752,10 +752,13 @@ a {
 .testimonial__list {
     display: flex;
     column-gap: 30px;
+    overflow: hidden;
 }
 
 .testimonial__item {
     text-align: center;
+    flex-shrink: 0;
+    width: calc((100% - 30px) / 2);
 }
 
 .testimonial__quote {
@@ -817,6 +820,10 @@ a {
     border-radius: 50%;
     background: #4ab5e3;
     overflow: hidden;
+}
+
+.testimonial__item:nth-child(2) .testimonial__avatar {
+    background: #439f90;
 }
 
 .testimonial__author-info {
